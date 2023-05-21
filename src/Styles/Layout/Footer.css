@@ -1,0 +1,85 @@
+.Footer {
+    background: #17007c;
+}
+
+.Footer-Address p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.747);
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.Footer-Address {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Footer-Address i {
+    color: #2ebdf5;
+    font-size: 48px;
+}
+
+.Footer-Logo {
+    width: 90%;
+}
+
+.Navigation-Footer h5{
+    color: #2ebdf5;
+    font-size: 17px;
+}
+
+.Navigation-Footer p {
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+
+.Footer-End {
+    margin-top: 25px;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #2ebdf5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.Footer-End p {
+    margin-bottom: 0;
+    color: #ffffffb7;
+    font-weight: 300;
+    
+}
+
+.Icon-Background {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    margin-left: 15px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    .Footer-Address {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .Footer-End {
+        display:flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+    }
+}

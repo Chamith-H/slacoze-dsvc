@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../Assets/Fonts/Roboto-Light.ttf');
+    font-weight:normal;
+    font-style: normal;
+}
+
+.InputField {
+    position: relative;
+}
+
+.InputField input {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.default-Input input {
+    border-color: rgb(177, 177, 177);
+}
+
+.default-Input input:focus {
+    outline: rgb(0, 167, 45) solid 1px;
+}
+
+.Error-Input input {
+    border-color: rgb(215, 0, 0);
+}
+
+.Type-Unfocused {
+    z-index: -1;
+    position: absolute;
+    margin-bottom: 0;
+    top:9px;
+    left:15px;
+    font-size: 16px;
+    font-family: 'Roboto';
+    background: #ffffff00;
+    color: rgb(136, 136, 136);
+    transition: top 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.Type-Unvalid {
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 0;
+    background: #ffffff;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: rgb(220, 0, 0);
+    font-size: 13px;
+    left:12px;
+    top:-10px;
+    transition: top 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.Type-Focused {
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 0;
+    background: #ffffff;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: rgb(0, 167, 45);
+    font-size: 13px;
+    left:12px;
+    top:-10px;
+    transition: top 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.Error-MSG {
+    margin-top: -2px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    padding-left: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgb(255, 0, 0);
+    font-family: 'Roboto';
+    font-size: 13px;
+}

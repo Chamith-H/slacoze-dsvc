@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../../Assets/Fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoHead';
+    src: url('../../Assets/Fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoGeneral';
+    src: url('../../Assets/Fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../Assets/Fonts/Roboto-Light.ttf');
+    font-weight:normal;
+    font-style: normal;
+}
+
+.About-CYOL {
+    padding-top: 60px;
+    padding-bottom: 45px;
+}
+
+.Our-Clients h1, .About-CYOL h1, .Digital-Solutions h1 {
+    font-family: 'RobotoHead';
+    color: rgb(0, 0, 0);
+}
+
+.Our-Clients span, .About-CYOL span, .Digital-Solutions span{
+    color:  #17007c;
+}
+
+.Crop-Management h1 {
+    font-family: 'RobotoHead';
+    color: #2caadb;
+}
+
+.Crop-Management span {
+    color: #e4e4e4;
+}
+
+.Hero-Section {
+    height: calc(100vh - 120px);
+    max-height: calc(700px - 120px);
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 60px;
+}
+
+.Font-Default h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family:'RobotoBold';
+}
+
+.Font-Default h5 {
+   color: rgba(255, 255, 255, 0.829);
+   font-family:'Roboto';
+   font-size: 25px;
+}
+
+.Font-Scrolled h1{
+    color: rgba(255, 255, 255, 0.459);
+    font-size: 50px;
+    font-family:'RobotoBold';
+}
+
+.Font-Scrolled h5 {
+    color: rgba(255, 255, 255, 0.377);
+   font-family:'Roboto';
+   font-size: 25px;
+}
+
+.Align-Hero-Button {
+    width: 100%;
+}
+
+.Hero-Section button {
+    margin-top: 19px;
+    width: 200px;
+    height: 60px;
+    border-radius: 80px;  
+    font-size: 18px;
+    font-family: 'RobotoBold';
+    transition: background 0.9s ease;
+}
+
+.Hero-Section button:hover {
+    background: #ffffff;
+    border-style:solid;
+    border-color: #ffffff;
+    color: rgb(29, 29, 29);
+    transition: background 0.9s ease-out;
+}
+
+.Font-Default button {
+    background: #ffffff18;
+    border-style:solid;
+    border-color: #ffff;
+    color: rgb(255, 255, 255);
+}
+
+.Font-Scrolled button {
+    background: #ffffff18;
+    border-style:solid;
+    border-color: #ffffff7a;
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.Heading-Title {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.Align-Section {
+    padding-bottom: 40px;
+}
+
+.Body-Contents {
+    background: #ffff;
+}
+
+.Our-Clients {
+    background: #ececec;
+}
+
+.Client-Card-Image {
+    display: flex;
+    justify-content: center;
+    background: #17007c;
+}
+
+.Client-Single-Card img {
+    width: 50%;
+    transition: transform 0.7s;
+}
+
+.Farm-Clients, .Enterprise-Clients, .Cooperative-Clients {
+    box-shadow: 0px 12px 10px 0px #00000017;
+}
+
+.Farm-Clients:hover img, .Enterprise-Clients:hover img, .Cooperative-Clients:hover img {
+    transform: scale(1.13);
+}
+
+.Align-Management-Card h3 {
+    color: #ffffffbe;
+}
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.Client-Status{
+    background: #ffff;
+    transition: transform 1s;
+}
+
+.Client-Status h5, .About-Card h5, .Single-Solution h5 {
+    font-family: 'RobotoBold';
+    font-size: 17px;
+    color: black;
+}
+
+.Client-Status p , .About-Card p, .Single-Solution li{
+    margin-bottom: 0;
+    font-size: 16px;
+   font-family: 'Roboto';
+    color: black;
+}
+
+.Default_Clients h5, .Default_Clients p {
+    transition: transform 0.7s, opacity 0.7s;
+    transform: translateY(60px);
+    opacity: 0%;  
+}
+
+.Animate_Clients h5, .Animate_Clients p{
+    transition: transform 0.8s, opacity 0.8s;
+    transform: translateY(0px);
+    opacity: 100%;  
+}
+
+.About-Default {
+    transition: transform 0.7s, opacity 0.8s;
+    transform: translateY(80px);
+    opacity: 0%; 
+}
+
+.About-Scrolled {
+    transition: transform 0.8s, opacity 0.9s;
+    transform: translateY(0px);
+    opacity: 100%; 
+}
+
+.About-Card img {
+    width: 100%;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.About-Card:hover img {
+    transform: scale(1.06);
+    overflow: hidden;
+}
+
+.Crop-Management {
+    background: #17007c;
+    padding-top: 80px;
+    padding-bottom: 220px;
+}
+
+.Crop-Management-Cards {
+    margin-top: -210px;
+}
+
+.Align-Management-Card {
+    background: #0000009d;
+    height: 100%;
+    display:flex;
+    align-items: flex-end;
+}
+
+
+.Planning, .Management, .ViewData, .LastObj{
+    position: relative;
+    overflow: hidden;
+}
+  
+.Planning::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Assets/Images/Management1.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+    transform-origin: center;
+}
+
+.Management::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Assets/Images/Management2.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+    transform-origin: center;
+}
+
+.ViewData::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Assets/Images/Management3.jpeg");
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+    transform-origin: center;
+}
+
+.LastObj::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Assets/Images/Management4.jpeg");
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+    transform-origin: center;
+}
+  
+.Planning:hover::before, .Management:hover::before, .ViewData:hover::before, .LastObj:hover::before {
+    transform: scale(1.4);
+}
+
+.Align-Management-Card h2 {
+    font-family: 'RobotoBold';
+    color: #ffffffc5;
+    font-size: 30px;
+}
+
+.ViewData, .Management, .Planning, .LastObj {
+    position: relative;
+    z-index: 2;
+    height: 450px;
+    box-shadow: 0px 5px 10px 0px #0000005d;
+}
+
+
+.Digital-Solutions {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.Single-Solution img {
+    width: 80px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    
+    .Font-Default h1 {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-family:'RobotoBold';
+    }
+    
+    .Font-Default h5 {
+       color: rgba(255, 255, 255, 0.829);
+       font-family:'Roboto';
+       font-size: 21px;
+    }
+    
+    .Font-Scrolled h1{
+        color: rgba(255, 255, 255, 0.459);
+        font-size: 40px;
+        font-family:'RobotoBold';
+    }
+    
+    .Font-Scrolled h5 {
+        color: rgba(255, 255, 255, 0.377);
+       font-family:'Roboto';
+       font-size: 21px;
+    }
+}

@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../../Assets/Fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoHead';
+    src: url('../../Assets/Fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoGeneral';
+    src: url('../../Assets/Fonts/Roboto-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../Assets/Fonts/Roboto-Light.ttf');
+    font-weight:normal;
+    font-style: normal;
+}
+
+.Demo-Background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.05;
+    height: 100vh;
+}
+
+.Hide-Form-Popup {
+    padding-top:80px;
+    opacity: 0;
+    transition: padding-top 0s ease-in-out 0.8s, opacity 0.4s ease-in-out; 
+}
+
+.Show-Form-Popup {
+    padding-top:0px;
+    opacity: 1;
+    transition: padding-top 0.7s ease-in-out 0.2s, opacity 0.4s ease-in-out 0.4s; 
+}
+
+.Contact-Header-Background {
+    background-color: #17007c
+}
+
+.Contact-Handler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Contact-Handler h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.Contact-Handler img {
+    height: 55px;
+}
+
+.Form-Handler {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+}
+
+.Contact-Handler button {
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.Contact-Handler button:hover {
+    color: #ffffff7d;
+}
+
+.Form-Submitting button {
+    border-style: none;
+    height: 40px;
+    background-color: #17007c;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+    font-family: 'RobotoGeneral';
+}
+
+.Form-Submitting button:hover {
+    background: #005186;
+}
+
+.Form-Title h2 {
+    font-family: 'RobotoHead';
+}
+
+.Form-Title span {
+    color: #17007c
+}
+
+.Form-Submitting p {
+    font-size: 16px;
+    font-family: 'Roboto';
+}

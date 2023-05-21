@@ -1,0 +1,78 @@
+.SubmitPopup {
+    position: fixed;
+    z-index: 10;
+    top:0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #007d4f94;
+    animation-name: circle-animation;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle img {
+    width: 80%;
+  }
+  
+  @keyframes circle-animation {
+    0% {
+      transform: scale(0.4);
+      background-color: #0044d8;
+    }
+
+    50% {
+      transform: scale(1) ;
+      background-color: #17007c;
+    }
+
+    100% {
+      transform: scale(0.4) rotate(360deg);
+    }
+  }
+
+  .Submit-Alert {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Submit-Alert h6 {
+    font-family: 'RobotoBold';
+    font-size: 18px;
+  }
+
+  .Submit-Alert p {
+    font-family: 'Roboto';
+  }
+
+  .Submit-Alert button {
+    background-color: #17007c;
+    border-style: none;
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #ffffff;
+    font-family: 'RobotoGeneral';
+    padding-bottom: 0;
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 725px) {
+    .Submit-Alert {
+        width: 100%;
+    }
+  }

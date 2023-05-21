@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../../Assets/Fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoHead';
+    src: url('../../Assets/Fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoGeneral';
+    src: url('../../Assets/Fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../Assets/Fonts/Roboto-Light.ttf');
+    font-weight:normal;
+    font-style: normal;
+}
+
+.Navbutton {
+    height: 28vh;
+    width: 100%;
+    background: #00000000;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+}
+
+.Navbutton h2 {
+    color: #ffffff;
+    font-family: 'RobotoBold';
+    text-shadow: 2px 2px 2px #000000;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    .Navbutton {
+        height: 23vh;
+    }
+}

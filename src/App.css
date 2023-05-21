@@ -1,0 +1,186 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.App-Stop {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Hero-Image {
+    position: fixed;
+    background-image: url("../src/Assets/Images/SLAhero.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    max-height: 700px;
+    z-index: -1;
+}
+
+.Align-Hero {
+    background: #0000008f;
+    min-width: 100%;
+    min-height: 100%;
+    transition: background 0.5s ease-in-out;
+}
+
+.Scrolled-Hero-Body {
+    background: #000000c0;
+    min-width: 100%;
+    min-height: 100%;
+    transition: background 0.5s ease-in-out;
+}
+
+.Header-Margin {
+    width: 100%;
+    height: 40px;
+}
+
+.Hide-Form {
+    position: fixed;
+    z-index: 999;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: #ffffff;
+    transition: width 0.5s ease-in-out, background 0.7s ease-in-out; 
+  }
+  
+  .Show-Form {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: #ffffff;
+    transition: width 0.5s ease-in-out, background 0.7s ease-in-out; 
+    box-shadow: 0px 0px 100px 0px #00000069;
+  }
+
+
+  /* ------------------------------------------------------------------------- */
+
+  @font-face {
+    font-family: 'RobotoBold';
+    src: url('./Assets/Fonts/Roboto-Medium.ttf');
+  }
+  
+  @font-face {
+    font-family: 'RobotoHead';
+    src: url('./Assets/Fonts/Roboto-Black.ttf');
+  }
+  
+  @font-face {
+    font-family: 'RobotoGeneral';
+    src: url('./Assets/Fonts/Roboto-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('./Assets/Fonts/Roboto-Light.ttf');
+    font-weight:normal;
+    font-style: normal;
+  }
+  
+  .Header-Dashboard {
+    width: 100%;
+    background: rgb(0,125,80);
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    align-items: center;
+  }
+  
+  .Header-Dashboard img {
+    height: 70px;
+  }
+  
+  .Navigations {
+    height: calc(100vh - 90px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Requesting button {
+    background-color: rgb(0,125,80);
+    border-style: none;
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #ffffff;
+    font-family: 'RobotoGeneral';
+  }
+  
+  .Background {
+    background-image: url("./Assets/Images/MainBackground.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+  
+  .Align-Background {
+    background-color: rgba(0, 0, 0, 0.649);
+    transition: background-color 0.2s ease;
+  }
+  
+  .Align-Background a {
+    text-decoration: none;
+  }
+  
+  .Brochure{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .Website {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .Overview {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .Brochure:hover {
+    background-color: rgba(17, 79, 94, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease-out;
+  }
+  
+  .Website:hover {
+    background-color: rgba(0, 125, 79, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease-out;
+  }
+  
+  .Overview:hover {
+    background-color: rgba(247, 160, 47, 0.312);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease-out;
+  }
+  
+  
+  .Requesting p {
+    font-family:  'RobotoGeneral';
+  }
+  
+  .Requesting button:hover {
+    background-color: rgb(0, 78, 49);
+  }
