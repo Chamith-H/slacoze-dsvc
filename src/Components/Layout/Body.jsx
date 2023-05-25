@@ -10,12 +10,22 @@ import About2 from "../../Assets/Images/About2.jpeg"
 import About3 from "../../Assets/Images/About3.jpeg"
 import About4 from "../../Assets/Images/About4.jpg"
 
+import pic1 from "../../Assets/Team/pic1.png"
+import pic2 from "../../Assets/Team/pic2.png"
+import pic3 from "../../Assets/Team/pic3.png"
+import pic4 from "../../Assets/Team/pic4.png"
+import pic5 from "../../Assets/Team/pic5.png"
+import pic6 from "../../Assets/Team/pic6.png"
+
+
 import Point from "../../Assets/Icons/Management_Point.png"
 
 import { useRef, useEffect, useState } from "react"
 
 const Body =( props )=> {
     const [scrolled, setScrolled] = useState(false);
+
+    
 
     const animate_Client_1 = useRef(null)
     const animate_Client_2 = useRef(null)
@@ -37,6 +47,44 @@ const Body =( props )=> {
 
     const services = useRef(null)
     const about = useRef(null)
+
+    const Team = [
+        {
+            image:pic1,
+            name: 'Mrs. Hansika Mahaadikara',
+            role: 'Supervisor'
+        },
+
+        {
+            image:pic2,
+            name: 'Ms Pipuni Wijesiri',
+            role: 'Core Supervisor'
+        },
+
+        {
+            image:pic3,
+            name: 'Sahan Harshana',
+            role: 'IT19950464'
+        },
+
+        {
+            image:pic4,
+            name: 'G.A.C. Hirushan',
+            role: 'IT19091594'
+        },
+
+        {
+            image:pic5,
+            name: 'W.P.V.T. Wikramarathne',
+            role:'IT19970264'
+        },
+
+        {
+            image:pic6,
+            name: 'L.R.W.D.E. Rajasekara',
+            role: 'Supervisor'
+        },
+    ]
 
     const clients = [
                         {
@@ -107,28 +155,32 @@ const Body =( props )=> {
                                     ref:animate_Manage_1,
                                     image:'',
                                     title:'Maintains a secure communication with Low powering nodes in areas with no signal',
-                                    class:'Planning'
+                                    class:'Planning',
+                                    tag:'/sahan'
                                 },
 
                                 {
                                     ref:animate_Manage_2,
                                     image:'',
                                     title:'Nodes’ State of Charge (%) dependent LoRa Message route control System',
-                                    class:'Management'
+                                    class:'Management',
+                                    tag:'/vidumini'
                                 },
 
                                 {
                                     ref:animate_Manage_3,
                                     image:'',
                                     title:'Make a disaster tracking algorithm and automatically identifying a disaster in the middle of a journey',
-                                    class:'ViewData'
+                                    class:'ViewData',
+                                    tag:'/chamith'
                                 },
 
                                 {
                                     ref:animate_Manage_4,
                                     image:'',
                                     title:'Track the location using GPS Module and find the nearest node that is closest to the device that facing for an abnormality',
-                                    class:'LastObj'
+                                    class:'LastObj',
+                                    tag:'/dasuni'
                                 }
                             ]
 
@@ -334,6 +386,26 @@ const Body =( props )=> {
             </div>
 
             <div className="Body-Contents">
+
+            <div className="Team py-5">
+                    <div className="px-lg-5 mx-4 mx-sm-5 py-5">
+                    <h1 className="text-center Heading-Title">OUR <span>PROJECT</span> SUPERVISORS & MEMBERS</h1>
+                        <div className="row g-0 pb-5">
+                        {Team.map((tem) => (
+                            <div className="col-2 team-box">
+                                <img src={tem.image} alt="" />
+                                <h6>{tem.name}</h6>
+                                <p>{tem.role}</p>
+                            </div>
+                        ))}
+                        </div>
+                        
+                        <a className="me-5" href="https://mysliit.sharepoint.com/:p:/r/sites/CDAPSubmissionCloud/_layouts/15/Doc.aspx?sourcedoc=%7BD6D542A4-C798-49D6-9AA9-7C9DADC6EE5A%7D&file=22_23-J%2054%20-%20Final%20Presentaion%20.pptx&action=edit&mobileredirect=true">Final Presentation</a>
+                        <a className="me-5" href="https://mysliit.sharepoint.com/sites/CDAPSubmissionCloud/2223JuneCloud/Forms/AllItems.aspx?id=%2Fsites%2FCDAPSubmissionCloud%2F2223JuneCloud%2F22%5F23%2DJ%2D54%2DStudents%2F6%2E%20Final%20Report%20%26%20Presentation%2FFinal%20Presentation%20PPT%2FFinal%20Demonstration%20Video%20%2D%2022%5F23%2DJ%C2%A054%2Emp4&viewid=cd1630e5%2D1b2a%2D4444%2Daf18%2D8f66366000c1&parent=%2Fsites%2FCDAPSubmissionCloud%2F2223JuneCloud%2F22%5F23%2DJ%2D54%2DStudents%2F6%2E%20Final%20Report%20%26%20Presentation%2FFinal%20Presentation%20PPT">Final Demo</a>
+                        <a href="https://mysliit.sharepoint.com/sites/CDAPSubmissionCloud/2223JuneCloud/Forms/AllItems.aspx?id=%2Fsites%2FCDAPSubmissionCloud%2F2223JuneCloud%2F22%5F23%2DJ%2D54%2DStudents%2F4%2E%20Research%20Paper%2F22%5F23%2DJ%2054%20%2D%20Research%20Paper%20%2Epdf&viewid=cd1630e5%2D1b2a%2D4444%2Daf18%2D8f66366000c1&parent=%2Fsites%2FCDAPSubmissionCloud%2F2223JuneCloud%2F22%5F23%2DJ%2D54%2DStudents%2F4%2E%20Research%20Paper">Research paper</a>
+                    </div>
+                </div>
+
                 <div className="Our-Clients py-5">
                     <div className="px-lg-5 mx-4 mx-sm-5 Align-Section">
                         <h1 className="text-center Heading-Title">OUR <span>PRODUCT</span> USERS</h1>
@@ -390,6 +462,7 @@ const Body =( props )=> {
                         <div className="row gx-3 gy-5">
                             {managements.map((management, index) => (
                                 <div className="col-md-6 col-lg-3">
+                                    <a href={management.tag}>
                                     <div className={show_Manages[index]?"About-Scrolled":"About-Default"} ref={management.ref}>
                                         <div className={management.class}>
                                             <div className="Align-Management-Card ps-4 pe-5 pb-3">
@@ -397,6 +470,7 @@ const Body =( props )=> {
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
                             ))}
                         </div>

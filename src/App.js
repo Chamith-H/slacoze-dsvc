@@ -7,6 +7,10 @@ import { useState, useEffect, useRef } from 'react';
 import ContactForm from './Components/Contents/ContactForm';
 
 import { Routes, BrowserRouter as Router, Route} from "react-router-dom";
+import Sahan from './Components/Layout/Sahan';
+import Dasuni from './Components/Layout/Dasuni';
+import Vidumini from './Components/Layout/Vidumini';
+import Chamith from './Components/Layout/Chamith';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -95,6 +99,11 @@ function App() {
                       <Footer scroll_Wanted={identity_Scroller} get_Form={view_Form}/>
                   </div>
               } />
+
+              <Route path='/sahan' element={<Sahan/>}></Route>
+              <Route path='/dasuni' element={<Dasuni/>}></Route>
+              <Route path='/vidumini' element={<Vidumini/>}></Route>
+              <Route path='/chamith' element={<Chamith/>}></Route>
             </Routes>
       </Router>  
     </div>

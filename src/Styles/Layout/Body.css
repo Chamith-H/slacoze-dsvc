@@ -20,17 +20,21 @@
     font-style: normal;
 }
 
+.Crop-Management-Cards a {
+    text-decoration: none;
+}
+
 .About-CYOL {
     padding-top: 60px;
     padding-bottom: 45px;
 }
 
-.Our-Clients h1, .About-CYOL h1, .Digital-Solutions h1 {
+.Our-Clients h1, .About-CYOL h1, .Digital-Solutions h1, .Team h1 {
     font-family: 'RobotoHead';
     color: rgb(0, 0, 0);
 }
 
-.Our-Clients span, .About-CYOL span, .Digital-Solutions span{
+.Our-Clients span, .About-CYOL span, .Digital-Solutions span, .Team span{
     color:  #17007c;
 }
 
@@ -323,6 +327,16 @@
 
 .Single-Solution img {
     width: 80px;
+}
+
+.team-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-box img{
+    width: 100%;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
