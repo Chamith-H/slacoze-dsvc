@@ -29,7 +29,7 @@ const Vidumini =()=> {
     ]
     return (
         <div className="Part-Page px-5 py-5">
-            <h2>W. p. V. T. Wikramarathna</h2>
+            <h2>W. P. V. T. Wickramarathna</h2>
             <h5>IT19970264</h5>
 
             <div className="Overviews mt-5">

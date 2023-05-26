@@ -63,25 +63,25 @@ const Body =( props )=> {
 
         {
             image:pic3,
-            name: 'Sahan Harshana',
+            name: 'P. A. S. H. Perera',
             role: 'IT19950464'
         },
 
         {
             image:pic4,
-            name: 'G.A.C. Hirushan',
+            name: 'G. A. C. Hirushan',
             role: 'IT19091594'
         },
 
         {
             image:pic5,
-            name: 'W.P.V.T. Wikramarathne',
+            name: 'W. P. V. T. Wickramarathna',
             role:'IT19970264'
         },
 
         {
             image:pic6,
-            name: 'L.R.W.D.E. Rajasekara',
+            name: 'L. R. W. D. E. Rajasekara',
             role: 'IT19965482'
         },
     ]
