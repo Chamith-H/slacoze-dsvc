@@ -82,7 +82,7 @@ const Body =( props )=> {
         {
             image:pic6,
             name: 'L.R.W.D.E. Rajasekara',
-            role: 'Supervisor'
+            role: 'IT19965482'
         },
     ]
 
